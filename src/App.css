@@ -1,38 +1,71 @@
-.App {
-  text-align: center;
+body {
+  max-width: 100vw;
+  min-width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.74)), url('../public/images/gravel.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content {
+  margin: 0;
+  padding: 0;
+  left: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+body::-webkit-scrollbar {
+  width: 15px;
+  background-color: black;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #404040;
+  border-radius: 50px;
+  height: 100px;
+  width: 50%;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: gray;
+}
+
+.comentariosection {
+  background-color: #00000094;
+  .scale-up-top {
+    animation: scale-up-top 1s;
+    -webkit-animation: scale-up-top 1s;
+}
+  @keyframes scale-up-top {
+    0% {
+      transform: scale(.5);
+      transform-origin: center top
+    }
+
+    100% {
+      transform: scale(1);
+      transform-origin: center top
+    }
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.comentarios {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+}
+
+.comentarios h1 {
   color: white;
+  font-size: 2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.estrella {
+  color: rgb(255, 255, 0);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.comentarios img {
+  width: 8rem;
 }

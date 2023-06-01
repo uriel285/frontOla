@@ -1,0 +1,65 @@
+.holder-contact {
+  animation: scale-up-horizontal-center 1s;
+  -webkit-animation: scale-up-horizontal-center 1s;
+}
+
+@keyframes scale-up-horizontal-center {
+  0% {
+    transform: scaleX(.2)
+  }
+
+  100% {
+    transform: scaleX(1)
+  }
+}
+
+.icomap {
+  color: rgb(255, 0, 0);
+  font-size: 3rem;
+  border: 3rem rgb(255, 0, 0);
+  margin-bottom: 0;
+}
+
+.vamap {
+  background-color: rgba(255, 255, 255, 0.548);
+  width: 100vw;
+  text-align: center;
+}
+
+.vamap p {
+  font-size: 1rem;
+  text-decoration: none;
+  color: rgb(82, 0, 0);
+}
+
+.vamap p:hover,
+.icomap:hover {
+  animation: vibrate 1.5s linear both;
+  -webkit-animation: vibrate 1.5s linear both;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0)
+  }
+
+  20% {
+    transform: translate(-2px, 2px)
+  }
+
+  40% {
+    transform: translate(-2px, -2px)
+  }
+
+  60% {
+    transform: translate(2px, 2px)
+  }
+
+  80% {
+    transform: translate(2px, -2px)
+  }
+
+  100% {
+    transform: translate(0)
+  }
+}

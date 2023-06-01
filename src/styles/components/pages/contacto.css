@@ -1,0 +1,91 @@
+.holder-contacto {
+    animation: slide-right 0.4s linear both;
+    -webkit-animation: slide-right 0.4s linear both;
+}
+
+@keyframes slide-right {
+    0% {
+        transform: translateX(0)
+    }
+
+    100% {
+        transform: translateX(100px)
+    }
+}
+
+.contac {
+    gap: 1.5rem;
+    width: 100vw;
+}
+
+.datos p {
+    font-size: 2rem;
+}
+
+.datos ul li {
+    font-size: 1.6rem;
+    color: white;
+    list-style: none;
+    text-align: left;
+}
+
+.formulario p {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 1rem; 
+}
+
+.formulario p label {
+    min-width: 5rem;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+}
+
+.formulario p input,
+.formulario textarea {
+    width: 50%;
+    background: #ffffff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border: 1px solid #000000a6;
+    font-size: 1.5rem;
+    padding: 6px 10px;
+    left: 50%;
+    margin-left: 5rem;
+}
+
+.formulario p:nth-child(4) {
+    align-items: start;
+}
+
+.formulario textarea {
+    resize: none;
+    height: 9.4rem;
+}
+
+.formulario input[type="submit"] {
+    background: #141414;
+    box-shadow: 0 0 0.2rem 0.2rem rgba(0, 0, 0, 0.473);
+    color: white;
+    font-size: 2rem;
+    padding: 6px 20px;
+    width: auto;
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color: #000000;
+    box-shadow: 0 0 0.3rem 0.3rem white;
+}
